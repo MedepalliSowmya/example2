@@ -1,0 +1,20 @@
+<app-header></app-header><br>
+<router-outlet></router-outlet>
+<app-footer></app-footer><br>
+<hr>
+<h1>CUSTORM DIRECTIVE</h1>
+<hr>
+    <h3 myDirective>just for demo</h3>
+    <hr>
+    <h3>thank you</h3>
+    <h1>IF_ELSE DEMO</h1>
+    <hr>
+    <div *ngIf="switch1;else thanks">just for demo</div>
+    <ng-template #thanks>THANK YOU</ng-template>
+    <br><br>
+    <button (click)="abc1()">TOGGLE</button><br><br>
+    <h3 *ngIf="switch2;then hi else hello">just for demo</h3>
+    <ng-template #hi>HI GOOD MORNING</ng-template>
+    <ng-template #hello>HELLO GOOD EVENING</ng-template>
+    <br><br>
+    <button (click)="abc2()">TOGGLE</button>
